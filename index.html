@@ -83,7 +83,7 @@
    form.addEventListener("submit", async (e) => {
      e.preventDefault();
      const newPassword = document.getElementById("newPassword").value;
-     const res = await fetch("https://your-api-name.onrender.com/reset_password", {
+     const res = await fetch("https://unionbank.onrender.com/reset_password", {
        method: "POST",
        headers: { "Content-Type": "application/json" },
        body: JSON.stringify({ token, new_password: newPassword })
